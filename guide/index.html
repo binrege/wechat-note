@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微信小程序 | 微信小程序笔记</title>
+    <meta name="description" content="微信小程序笔记">
+    <meta name="generator" content="VuePress 1.3.0">
+    <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/wechat-note/assets/css/0.styles.5f60be89.css" as="style"><link rel="preload" href="/wechat-note/assets/js/app.13ae6195.js" as="script"><link rel="preload" href="/wechat-note/assets/js/2.b77f5152.js" as="script"><link rel="preload" href="/wechat-note/assets/js/9.4aef4bf2.js" as="script"><link rel="prefetch" href="/wechat-note/assets/js/10.c9edc631.js"><link rel="prefetch" href="/wechat-note/assets/js/3.5b20e2db.js"><link rel="prefetch" href="/wechat-note/assets/js/4.53d828d9.js"><link rel="prefetch" href="/wechat-note/assets/js/5.75e50bf3.js"><link rel="prefetch" href="/wechat-note/assets/js/6.a2184538.js"><link rel="prefetch" href="/wechat-note/assets/js/7.34ed2cdd.js"><link rel="prefetch" href="/wechat-note/assets/js/8.8ff65897.js">
+    <link rel="stylesheet" href="/wechat-note/assets/css/0.styles.5f60be89.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wechat-note/" class="home-link router-link-active"><!----> <span class="site-name">微信小程序笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wechat-note/guide/" class="nav-link router-link-exact-active router-link-active">
+  我的笔记
+</a></div><div class="nav-item"><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/wechat-note/guide/" class="nav-link router-link-exact-active router-link-active">
+  我的笔记
+</a></div><div class="nav-item"><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>微信小程序</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="微信小程序"><a href="#微信小程序" class="header-anchor">#</a> 微信小程序</h3> <h4 id="文件结构"><a href="#文件结构" class="header-anchor">#</a> 文件结构</h4> <ul><li>app.js 全局入口文件
+<ul><li>globalData代表全局对象 可以用来共享数据</li></ul></li> <li>app.json 全局配置文件
+<ul><li>pages(数组): 配置路由组件<br>
+如果你需要配置路由,首先必须在pages这个文件夹下面创建一个路由组件
+所有组件的创建,我们不在vscode里面创建,我们在开发者工具里面创建,只需要在pages这个数组里面写路径,然后会自动创建<br>
+pages数组里面写的路径,一定是绝对路径<br>
+谁写在这个数组的第一项,谁就是首页, 首页必须写在pages数组的第一项,其他的顺序没有关系</li> <li>window:全局配置
+<ul><li>backgroundTextStyle: 背景文字样式 只有light(浅色)和dark(深色)两个值</li> <li>navigationBarBackgroundColor: 导航条的背景颜色</li> <li>navigationBarTitleText: 导航条的文字</li> <li>navigationBarTextStyle: 导航条文字样式: 只有black(黑色)和white(白色)两个值</li></ul></li> <li>tabBar: 底部栏的配置
+<ul><li>color: tabBar文字未选中时的颜色</li> <li>selectedColor: 文字选中时的颜色</li> <li>backgroundColor: 背景颜色</li> <li>borderStyle: 边框样式 只支持white和black</li> <li>list(数组): tabBar的选项
+<ul><li>图片最好是png的格式 不能是svg的格式</li> <li>tabBar配置的路径,对应的都是路由组件,所以说你必须先创建对应的路由组件</li> <li>pagePath: 对应的路由组件的路径</li> <li>text:文字</li> <li>iconPath: 未选中时的图片路径`</li> <li>selectedIconPath: 选中时的图片路径</li></ul></li></ul></li> <li>每个组件都有4个结构
+<ul><li>wxml: html文件</li> <li>wxss: css文件</li> <li>js: js文件</li> <li>json: 配置文件</li></ul></li> <li>app.wxss: 全局css文件, 里面写的样式,会全局生效</li></ul></li></ul> <h4 id="路由组件"><a href="#路由组件" class="header-anchor">#</a> 路由组件</h4> <ul><li>wxml</li> <li>标签<br>
+1.div =&gt; view
+2.span =&gt; text
+3.img =&gt; image</li> <li>微信小程序是不存在dom这个概念的,所以说,微信小程序是完全不能操作dom的</li> <li>wxss: 和普通的css文件没有任何区别,该怎么写就怎么写<br>
+需要注意的是: 1.类名取规范一点 2.类名不能重复(除了有相同样式的)<br>
+所有的单位通通用rpx,它会自动适配所有机型,rpx的尺寸和实际尺寸的比例是2:1<br>
+比如我们要写一个margin-top:10px, 在小程序当中就需要写成 margin-top:20rpx<br>
+在微信小程序当中,没有hover这个概念的,但是给我们提供了一个hover-class这个属性,相当于点击之后的效果,view和button都可以设置,text不能设置</li> <li>js</li> <li>data: 定义数据, 渲染通过插值表达式的形式(两个大括号)</li> <li>方法(事件)<br>
+1.通过bind来绑定方法(实际上就是把vue绑定方法用的@改成bind)
+2.点击事件:bingtap
+3.原则上是除了在生命周期和data里面不能写,可以写在任意位置,我们一般写在data的后面
+4.如果想在事件当中使用data当中的数据,通过this.data.xxx来获取数据
+5.给data当中的数据复制,必须通过this.setData({}),对象里面传之前的数据为属性,改变后的数据为值
+6.先改变data当中的数据,然后通过this.setData({}),把这个数据又赋值给自己</li> <li>循环
+<ul><li>语法wx:for</li> <li>只要使用了data当中的变量,必须通过两个{{}}把这个变量包起来</li> <li>默认的每一项都叫item,下标都叫index</li> <li>wx:key如果报了警告,就把{{}}去掉,如果没有报就不管它</li> <li>如果你是多层循环,或者你需要改动item或者index, wx:for-item='item1',wx:for-index='index1'</li> <li>如果想给循环的每一项绑定事件,想使用循环当中的每一项的值,必须通过自定义属性的方式,不能直接在点击里面传参数</li> <li>每一个点击事件里面只有一个参数,就是event事件对象</li></ul></li> <li>条件判断
+wx:if wx:elif wx:else<br>
+使用了变量做判断,必须加{{}}</li> <li>动态绑定class<br>
+只能通过三目运算符来动态绑定class<div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>view <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;box box1 {{age &gt; 10 ? 'active' : '' &quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+</code></pre></div></li> <li>动态绑定style
+直接用{{}}把变量包起来<div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>view style<span class="token operator">=</span><span class="token string">&quot;color: {{styleObj.color}}&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>view<span class="token operator">&gt;</span>
+</code></pre></div></li> <li>生命周期
+微信小程序的路由是默认加了页面缓存的,等同于vue当中的keep-alive
+<ul><li>onLoad: 等同于vue当中的mounted<br>
+1.发送请求
+2.数据初始化
+3.只会加载一次
+4.接收其他路由传递过来的参数</li> <li>onShow: 每一次进入页面都会加载</li> <li>onHide: 离开页面触发的生命周期</li> <li>微信小程序帮我们封装了下拉刷新和上拉加载更多的操作
+<ul><li>下拉刷新, 必须在当前路由组件的json文件当中配置, 开启下拉刷新, 设置enablePullDownRefresh为true</li> <li>下拉刷新对应onPullDownRefresh这个生命周期</li> <li>上拉加载更多,在对应的onReachBottom直接写上拉加载更多的代码或者操作,触底了会自动触发这个生命周期</li></ul></li> <li>onShareAppMessage: 转发或分享功能,必须写这个生命周期的名字,里面可以不写内容,如果不写这个生命周期的名字,就不能转发或分享</li></ul></li> <li>每个组件单独的json文件的配置
+<ul><li>基本配置同app.json当中的window这个配置项是一模一样的</li> <li>配置颜色只能写16进制的颜色,不能写英文的颜色</li> <li>usingComponents: 使用组件,需要用到一般组件,在这里面来注册</li></ul></li> <li>路由跳转和传参
+<ul><li>跳转除了tabBar配置之外的路由</li></ul> <div class="language-js extra-class"><pre class="language-js"><code> wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token operator">:</span> <span class="token string">'绝对路径'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>跳转tabBar的路由</li></ul> <div class="language-js extra-class"><pre class="language-js"><code> wx<span class="token punctuation">.</span><span class="token function">switchTab</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token operator">:</span> <span class="token string">'/pages/my/my'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token operator">-</span> 关闭当前页面跳转
+  wx<span class="token punctuation">.</span><span class="token function">redirectTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/pages/test/test?msg=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>路由直接传参
+<ul><li>通过url直接传递参数,类似于get请求传参的方式</li> <li>在跳转之后的页面, onLoad这个生命周期会自带一个参数,options就是路由传递过来的参数对象</li> <li>如果数据过于多或者复杂,可能就会出bug,数据传递不完整或者数据丢失</li></ul></li> <li>本地存储
+<ul><li>方法要用有sync的这类的方法,代表同步存储,如果在操作过程当中失败,程序会终止,会给你错误提示</li> <li>存数据: wx.setStorageSync(key, value),如果要保存对象,不需要转成字符串,直接存</li> <li>取数据: wx.getStorageSync(key)</li> <li>清除单个数据: wx.removeStorageSync(key)</li> <li>清除全部: wx.clearStorage()</li></ul></li></ul></li></ul> <h4 id="微信小程序常用方法"><a href="#微信小程序常用方法" class="header-anchor">#</a> 微信小程序常用方法</h4> <ul><li>如果wx的方法里面有成功和失败的回调函数, 必须写成箭头函数的形式,这样才能保证this的指向为当前组件</li> <li>轻提示</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>wx<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   title<span class="token operator">:</span> <span class="token string">'登录成功'</span><span class="token punctuation">,</span>
+   icon<span class="token operator">:</span> <span class="token string">'loading'</span><span class="token punctuation">,</span>
+   image<span class="token operator">:</span> <span class="token string">''</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>icon: 默认success/loading/none,如果设置图标为success或者loading, title最多只能7个字</p> <ul><li>全局的loading和取消loading<div class="language-js extra-class"><pre class="language-js"><code>wx<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">''</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> 
+wx<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li>模态框</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>  wx<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'删除的提示'</span><span class="token punctuation">,</span>
+    content<span class="token operator">:</span> <span class="token string">'您确定删除吗?'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// console.log(result)</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>confirm<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击了确定'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击了取消'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>动态设置标题</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>  wx<span class="token punctuation">.</span><span class="token function">setNavigationBarTitle</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    title<span class="token operator">:</span> msg<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/wechat-note/assets/js/app.13ae6195.js" defer></script><script src="/wechat-note/assets/js/2.b77f5152.js" defer></script><script src="/wechat-note/assets/js/9.4aef4bf2.js" defer></script>
+  </body>
+</html>
